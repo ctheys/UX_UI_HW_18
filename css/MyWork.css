@@ -6,6 +6,10 @@ header {
   background-color: none;
   padding: 35px;
 }
+
+.logo {
+  margin-bottom: 50px;
+}
 header ul {
   display: flex;
   align-content: center;
@@ -24,7 +28,7 @@ header p {
 }
 
 /*Hero*/
-.hero {
+/*.hero {
   margin-left: 75px;
   margin-right: 90px;
   font-size:50px;
@@ -32,61 +36,63 @@ header p {
   padding-bottom: 40px;
   height: 600px;
   font-family: 'Montserrat';
-}
+}*/
 
-.scroll {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  margin: 0;
-  padding-bottom: none;
-}
-
-.selectionWork {
+.Hero h1 {
+  font-family: 'AgencyFB Black', sans-serif;
+  font-size: 100px;
   text-align: center;
-  margin: 70px auto;
-  margin-top: -120px;
-  margin-bottom: 70px;
-  font-size: 50px;
+  padding: 0px;
+}
+
+.Hero p {
   font-family: 'Montserrat';
-  color: #C17C74;
-}
-
-.Projects {
-  margin: 30px 30%;
-  display: grid;
-  justify-content: center;
-  grid-template-rows: 35%;
-  grid-template-areas: "Reelii NavyForce; APWF";
-}
-
-.Reelii {
-  width: 500px;
-  text-align: center;  
-}
-
-.Navy {
-  width: 500px;
+  font-size: 20px;
   text-align: center;
+  padding: 0px;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-bottom: 50px;
 }
 
-.APWF {
-  width: 500px;
-  text-align: center;
-}
-  
-.ProjectDescription1, .ProjectDescription2, .ProjectDescription3 {
-  background-color: none;
-  font-family: 'Montserrat';
-  margin-bottom: 50px;  
+.arrowLeft {
+  float: Left;
 }
 
-.center {
+.arrowRight {
+  float: Right;
+}
+
+.arrowDown {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-  
+
+.Reelii {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.UXProcess {
+  font-family: 'Montserrat';
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.Process {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+}
+
+.ProcessDescription {
+  color: #d7d7d7;
+}
+
+
 footer { 
   height: 60px;
   display: flex;
