@@ -2,6 +2,8 @@ body {
     margin-left: 90px;
     margin-right: 90px;
   }
+
+  /*Header*/
   header {
     background-color: none;
     padding: 35px;
@@ -15,35 +17,57 @@ body {
   header li {
     display: inline-block;
     padding: 0px 5px;
-    color: #2A3D45;
     font-size: 20px;
     font-family: 'Montserrat';
   }
+  header li a {
+    color: #2a3d45;
+    text-decoration: none;
+  }
+
+  header li a:active {
+    color: #c17c74;
+    text-decoration:solid;
+  }
+
+  header li a:hover {
+    color: #c17c74;
+  }
+
+
   header p {
     display: inline-block;
   }
   
+  /*Body*/
   .Container {
-    display: flex;
-    align-items: center;
+    margin-left: 90px;
+    margin-right: 90px;
+    display: grid;
+    grid-template-areas: 'imgCol, txtCol';
+    grid-template-columns: 30% 70%;
     font-size: 20px;
     text-align: justify;
   }
 
   .photoCindy {
-    margin-bottom: 150px;
-    justify-content: center;
+    display: grid;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left: 60px;
   }
 
   .txtCol {
-    float: left;
-    margin: 50px;
-    margin-bottom: 150px;
+    float: right;
+    margin-bottom: 100px;
+    padding: 50px;
   }
     
   .txtCol p {
     font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 100;
+    text-align: justify;
+    display: inline;
   }
 
   .txtCol a {
@@ -51,23 +75,64 @@ body {
     font-family: 'Montserrat';
   }
 
-  .txtCol h3 {
+  .txtCol h4 {
     color: rgb (122, 108, 93);
+    font-family: 'Montserrat';
   }
 
-  footer { 
-    height: 60px;
-    display: flex;
-    margin-right: none;
-    margin-left: none;
-    align-items: center;
-    background-color: #C17C74;
-    justify-content: space-around;
-  }
-  
-  footer p {
+  /*Footer*/
+  .footerbar p{
     font-size: 20px;
+    display: inline-block;
     font-family: 'Montserrat';
     color: white;
   } 
-     
+  .footerbar ul {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #C17C74;
+    align-content: center;
+    color: white;
+  }
+  .footerbar li {
+    display: inline-block;
+    padding: 0px 5px;
+    color: #2A3D45;
+    font-size: 20px;
+    font-family: 'Montserrat';
+  }
+ 
+  @media only screen and (max-width: 1000px) {
+
+    .imgCol{
+      justify-content: center;
+      width: 100%;  
+    }
+
+    .txtCol {
+      width: 100%;
+      justify-content: end;
+    
+    }
+
+  header li {
+    display: inline-block;
+    color: #2A3D45;
+    font-size: 16px;
+    font-family: 'Montserrat';
+  }
+  header p {
+    display: inline-block;
+  }
+
+  .footerbar li a {
+    text-decoration: none;
+    color: #2a3d45;
+  }
+  
+  .Container {
+    font-size: 16px;
+    text-align: justify;
+  }
+}  
