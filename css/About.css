@@ -43,26 +43,28 @@ body {
   .Container {
     margin-left: 90px;
     margin-right: 90px;
-    display: grid;
+    display: flex;
+    align-items: center;
     grid-template-areas: 'imgCol, txtCol';
     grid-template-columns: 30% 70%;
     font-size: 20px;
     text-align: justify;
   }
 
+  }
   .photoCindy {
-    display: grid;
+    float: left;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-left: 60px;
   }
 
-  .txtCol {
-    float: right;
+  .AboutMe {
+    /*float: right;*/
     margin-bottom: 100px;
     padding: 50px;
   }
     
-  .txtCol p {
+  .AboutMe p {
     font-family: 'Montserrat';
     font-size: 20px;
     font-weight: 100;
@@ -70,22 +72,29 @@ body {
     display: inline;
   }
 
-  .txtCol a {
+  .AboutMe a {
     color: #2A3D45;
     font-family: 'Montserrat';
   }
 
-  .txtCol h4 {
+  .AboutMe h4 {
     color: rgb (122, 108, 93);
     font-family: 'Montserrat';
   }
 
-  /*Footer*/
+  /*Footer
+
+  .footerbar{
+    position:absolute;
+    bottom:0;
+    display: block;
+  }
   .footerbar p{
     font-size: 20px;
     display: inline-block;
     font-family: 'Montserrat';
     color: white;
+    
   } 
   .footerbar ul {
     height: 60px;
@@ -101,7 +110,7 @@ body {
     color: #2A3D45;
     font-size: 20px;
     font-family: 'Montserrat';
-  }
+  }*/
  
   @media only screen and (max-width: 1000px) {
 

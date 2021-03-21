@@ -1,14 +1,12 @@
 body {
   margin-left: 90px;
   margin-right: 90px;
+  margin-bottom: 100px;
 }
+
 header {
   background-color: none;
   padding: 35px;
-}
-
-.logo {
-  margin-bottom: 50px;
 }
 header ul {
   display: flex;
@@ -19,10 +17,24 @@ header ul {
 header li {
   display: inline-block;
   padding: 0px 5px;
-  color: #2A3D45;
   font-size: 20px;
   font-family: 'Montserrat';
 }
+header li a {
+  color: #2a3d45;
+  text-decoration: none;
+}
+
+header li a:active {
+  color: #c17c74;
+  text-decoration:solid;
+}
+
+header li a:hover {
+  color: #c17c74;
+}
+
+
 header p {
   display: inline-block;
 }
@@ -44,12 +56,11 @@ header p {
   text-align: center;
   padding: 0px;
 }
-
 .Hero p {
   font-family: 'Montserrat';
   font-size: 20px;
   text-align: center;
-  padding: 0px;
+  padding:0px;
   margin-left: 200px;
   margin-right: 200px;
   margin-bottom: 50px;
@@ -68,20 +79,66 @@ header p {
   margin-left: auto;
   margin-right: auto;
 }
-
 .Reelii {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  text-align: justify;
+}
+.Process {
+  padding: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
 }
 
 .UXProcess {
   font-family: 'Montserrat';
   margin-left: 200px;
   margin-right: 200px;
+  text-align: justify;
 }
 
-.Process {
+.UXProcess h3::first-letter {
+  font-family:'Merriweather';
+  font-size: 400%;
+  color: #E3E3E3;
+}
+.UXProcess h2 {
+  color: #666666;
+  font-family: 'Merriweather';
+  font-size: 200%;
+}
+
+.UserResearch h3, .Ideation h3, .Test h3, .FinalPrototype h3, .FinalThoughts h3 {
+  color: #666666;
+  font-family: 'Merriweather';
+  font-size: 150%;
+  line-height: normal;
+}
+
+.UserResearch p, .Ideation p, .Test p, .FinalThoughts p {
+  color: #666666;
+  font-family: 'Montserrat';
+  line-height: normal;
+  font-size: 16px;
+}
+
+.a, .b, .c, .g, .h, .i, .j, .k, .l, .m, .n, .o, .p {
+  text-indent: 50px;
+  line-height: normal;
+}
+
+.d, .e, .f {
+  text-indent: 10%;
+  line-height: normal;
+}
+
+
+
+
+/*.Process {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -93,7 +150,7 @@ header p {
 }
 
 
-footer { 
+/*footer { 
   height: 60px;
   display: flex;
   margin-right: none;
@@ -107,5 +164,5 @@ footer p {
   font-size: 20px;
   font-family: 'Montserrat';
   color: white;
-} 
+} */
    
